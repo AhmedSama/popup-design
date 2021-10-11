@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+/* general classes */
+.content{
+    position: relative;
+    height: 100vh;
+    background: rgb(251, 253, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ .btn{
+     padding: 10px;
+     font-size: 20px;
+     font-weight: 900;
+     border-radius: 10px;
+     border: 0;
+     color: #fff;
+     background: #7209b7;
+     cursor: pointer;
+     
+ }
+.btn:hover{
+    transition: 0.5s;
+    box-shadow:3px 3px 8px rgba(0,0,0,0.3);
+}
+
+
+
+/* pop up classes */
+.popup{
+    position: absolute;
+    top: -100%;
+    right: 10px;
+    width: 20em;
+    background: #00aaff;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.popup:hover{
+    box-shadow: 1px 1px 20px rgba(0,0,0,0.5);
+}
+.popup-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.popup-close{
+    font-size: 13px;
+    font-weight: 700;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.popup-close:hover{
+    transition: 0.1s;
+    background: #cc006d;
+
+}
+.popup-title{
+    font-size: 20px;
+    padding: 3px;
+    margin: 3px;
+}
+.popup-content{
+    font-size: 15px;
+    padding: 3px;
+    margin: 3px;
+}
+.popup.active{
+    top: 10px;
+}
+
+
+
+
+
+
+
